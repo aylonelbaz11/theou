@@ -112,6 +112,7 @@ export default function HomePage() {
           </svg>
           קלוט אספקה
         </Link>
+                  <Link href="/suppliers" className="flex items-center justify-center gap-3 w-full h-16 rounded-xl bg-white border-2 border-[#111] text-[#111] font-bold text-lg mb-6 hover:bg-gray-50 transition-colors active:scale-[0.98]">ספקים</Link>Link></Link>
 
         {/* Today's Deliveries */}
         <div>

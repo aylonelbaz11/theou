@@ -1,0 +1,8 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/home/page": "/home",
+  "/delivery/[id]/page": "/delivery/[id]",
+  "/login/page": "/login",
+  "/page": "/",
+  "/intake/page": "/intake"
+}

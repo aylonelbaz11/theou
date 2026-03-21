@@ -10,7 +10,7 @@ import StatusBadge from "@/components/StatusBadge";
 interface DeliveryProof {
   id: string;
   created_at: string;
-  status: "normal" | "defective" | "treated";
+  status: "normal" | "defective" | "treated"
   received_by_name: string;
   suppliers: { name: string } | null;
 }
@@ -74,6 +74,7 @@ export default function HomePage() {
         <div className="flex items-center justify-between py-6">
           <h1 className="text-3xl font-bold tracking-tight text-[#111]">Theou.</h1>
           <div className="flex items-center gap-3">
+                        <Link href="/suppliers" className="text-sm text-gray-500 hover:text-[#111] transition-colors font-medium">ספקים</Link>Link></Link>
             <span className="text-xs text-gray-400 hidden sm:block truncate max-w-[160px]">{userEmail}</span>
             <button
               onClick={handleSignOut}

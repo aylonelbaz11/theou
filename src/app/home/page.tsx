@@ -10,7 +10,7 @@ import StatusBadge from "@/components/StatusBadge";
 interface DeliveryProof {
   id: string;
   created_at: string;
-  status: "normal" | "defective" | "treated"
+  status: "normal" | "defective" | "treated";
   received_by_name: string;
   suppliers: { name: string } | null;
 }
@@ -74,7 +74,6 @@ export default function HomePage() {
         <div className="flex items-center justify-between py-6">
           <h1 className="text-3xl font-bold tracking-tight text-[#111]">Theou.</h1>
           <div className="flex items-center gap-3">
-                        <Link href="/suppliers" className="text-sm text-gray-500 hover:text-[#111] transition-colors font-medium">ספקים</Link>Link></Link>
             <span className="text-xs text-gray-400 hidden sm:block truncate max-w-[160px]">{userEmail}</span>
             <button
               onClick={handleSignOut}
@@ -91,9 +90,9 @@ export default function HomePage() {
             href="/intake"
             className="flex items-center gap-3 w-full rounded-xl bg-yellow-50 border border-yellow-200 px-4 py-3.5 mb-4 hover:bg-yellow-100 transition-colors"
           >
-            <span className="text-xl">📋</span>
+            <span className="text-xl">ð</span>
             <div className="flex-1">
-              <p className="text-sm font-semibold text-yellow-800">המשך טיוטה</p>
+              <p className="text-sm font-semibold text-yellow-800">×××©× ×××××</p>
               <p className="text-xs text-yellow-700 mt-0.5">Resume draft in progress</p>
             </div>
             <svg className="w-4 h-4 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -110,9 +109,8 @@ export default function HomePage() {
           <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
           </svg>
-          קלוט אספקה
+          ×§××× ××¡×¤×§×
         </Link>
-                  <Link href="/suppliers" className="flex items-center justify-center gap-3 w-full h-16 rounded-xl bg-white border-2 border-[#111] text-[#111] font-bold text-lg mb-6 hover:bg-gray-50 transition-colors active:scale-[0.98]">ספקים</Link>Link></Link>
 
         {/* Today's Deliveries */}
         <div>
@@ -151,7 +149,7 @@ export default function HomePage() {
                       {d.suppliers?.name ?? "Unknown supplier"}
                     </p>
                     <p className="text-xs text-gray-400 mt-0.5">
-                      {formatTime(d.created_at)} · {d.received_by_name}
+                      {formatTime(d.created_at)} Â· {d.received_by_name}
                     </p>
                   </div>
                   <StatusBadge status={d.status} />

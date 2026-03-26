@@ -19,7 +19,7 @@ export default function HomePage() {
   const router = useRouter();
   const [ready, setReady] = useState(false);
   const [deliveries, setDeliveries] = useState<DeliveryProof[]>([]);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(true)
   const [draftExists, setDraftExists] = useState(false);
   const [userEmail, setUserEmail] = useState<string>("");
 
@@ -92,7 +92,7 @@ export default function HomePage() {
           >
             <span className="text-xl">ð</span>
             <div className="flex-1">
-              <p className="text-sm font-semibold text-yellow-800">×××©× ×××××</p>
+              <p className="text-sm font-semibold text-yellow-800">המשך טיוטה</p>
               <p className="text-xs text-yellow-700 mt-0.5">Resume draft in progress</p>
             </div>
             <svg className="w-4 h-4 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -109,7 +109,7 @@ export default function HomePage() {
           <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
           </svg>
-          ×§××× ××¡×¤×§×
+          קלוט אספקה
         </Link>
 
         {/* Today's Deliveries */}
